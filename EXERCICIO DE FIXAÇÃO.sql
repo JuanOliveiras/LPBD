@@ -26,3 +26,22 @@ funcao varchar(30),
 salario decimal(8,2),
 primary key(codigo_Func, codigo_Depto),
 foreign key(codigo_Depto) references Departamentos(codigo_Depto));
+
+
+select primeiro_Nome, segundo_Nome from funcionarios order by segundo_Nome;
+
+select * from funcionarios order by cidade;
+
+select primeiro_Nome, segundo_Nome, salario from funcionarios where salario > 1.000 order by primeiro_Nome;
+
+select data_Nasc, primeiro_Nome from funcionarios order by data_Nasc;
+
+select primeiro_Nome, segundo_nome, fone_Cel, fone_Res,cep from funcionarios;
+
+select SUM(salario) from funcionarios;
+
+SELECT COUNT(codigo_Func)from funcionarios;
+
+select avg(salario) from funcionarios;
+
+select primeiro_Nome from funcionarios where cidade = 'Itapira' and funcao = 'Recepcionista';
