@@ -44,4 +44,4 @@ SELECT COUNT(codigo_Func)from funcionarios;
 
 select avg(salario) from funcionarios;
 
-select primeiro_Nome from funcionarios where cidade = 'Itapira' and funcao = 'Recepcionista';
+select primeiro_Nome, funcao from funcionarios where cidade = "Itapira" and funcao = "Recepcionista";
